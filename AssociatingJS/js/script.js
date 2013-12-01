@@ -1,10 +1,6 @@
-// Arrays
+// Expressions
 
-var muppetNames = ["Kermit", "Miss Piggy"]; // 0,1,2,3
-
-muppetNames[1] = "Rizzo"; // Change index #1 to Rizzo
-muppetNames[2] = "Fozzy"; // Adding to the array at position 3
-
-var num = 1;
-
-console.log(muppetNames[num]); // Lets me see what's inside index 1
+var a = 2; // sets up our variable a and defines it with 2
+var b;
+b - a + 3; // add 3 to a
+console.log(a);
