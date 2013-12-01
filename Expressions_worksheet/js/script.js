@@ -33,11 +33,18 @@ var people = 27;
 // setting the number of pizzas ordered.
 var pizzas = 5;
 
-/* Calculating the total number of slices by first multiplying the total number
-of pizzas by the total number of slices in each pizza. Then, divide the total number of slices
-by the number of people to arrive at the result. */
+// calculating the number of slices each person will get.
 var slicesPerPerson = pizzas * slices / people;
 
 // Output the results
 console.log("Each person ate " + slicesPerPerson + " slices of pizza at the party.")
 
+
+
+// Slice of Pie part II
+
+// setting number of slices Sparky will get.
+var sparkySlices = pizzas * slices % people;
+
+// Output the results.
+console.log("Sparky got " + sparkySlices + " slices of pizza.")
