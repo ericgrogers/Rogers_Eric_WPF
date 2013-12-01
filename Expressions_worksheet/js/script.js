@@ -69,3 +69,27 @@ console.log("You have spent a total of $" + totalAmountSpent + " on groceries ov
 
 
 
+// Discounts
+
+// Calculate discounted price with and without sales tax.
+
+// setting original price
+var originalPrice = 75;
+
+// setting discount percentage
+var percentDiscount = 15;
+
+// setting item description
+var item = "dress shoes";
+
+// setting sales tax percentage
+var salesTax = 5;
+
+// calculating price of item without tax
+var itemNoTax = originalPrice - originalPrice * percentDiscount / 100;
+
+// calculating price of item with tax
+var itemWithTax = itemNoTax + salesTax * itemNoTax / 100;
+
+// output the results
+console.log("Your " + item + " was originally $" + originalPrice + ", but after a " + percentDiscount + "% discount, it is now $" + itemNoTax + " without tax, and $" + itemWithTax + " with tax.");
