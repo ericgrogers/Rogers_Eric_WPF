@@ -4,6 +4,10 @@
 document.querySelector("body").style.backgroundColor= "#00FF00";
 
 
+// Eric Rogers
+// 12/01/13
+// Expressions Worksheet
+
 // Dog Years
 
 // Calculate how old Sparky the pit bull is in dog years based on his actual age.
