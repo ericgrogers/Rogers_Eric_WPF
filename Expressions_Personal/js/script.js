@@ -17,6 +17,8 @@ var pricePerCup = prompt("How much do you pay for a cup of Coffee?");
 // ask the user how many days per week coffee is drank and save it to daysPerWeek
 var daysPerWeek = prompt("How many days per week do you drink Coffee?");
 
+// ask the user how many cups of coffee is drank per day and save it to cupsPerDay
+var cupsPerDay = prompt("How many cups of Coffee do you drink per day?");
 
 console.log(pricePerCup);
 
