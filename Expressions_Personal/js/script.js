@@ -20,7 +20,9 @@ var daysPerWeek = prompt("How many days per week do you drink Coffee?");
 // ask the user how many cups of coffee is drank per day and save it to cupsPerDay
 var cupsPerDay = prompt("How many cups of Coffee do you drink per day?");
 
-console.log(pricePerCup);
+// total the amount of coffee drank by multiplying daysPerWeek by cupsPerDay
+var totalCoffee = Number(daysPerWeek) * Number(cupsPerDay);
 
+console.log(pricePerCup, daysPerWeek, cupsPerDay, totalCoffee);
 
 
