@@ -23,8 +23,8 @@ var cupsPerDay = prompt("How many cups of Coffee do you drink per day?");
 // setting the weeks per year
 var weeksPerYear = 52;
 
-// total the amount of coffee drank by multiplying daysPerWeek by cupsPerDay
-var totalCoffee = Number(daysPerWeek) * Number(cupsPerDay) * weeksPerYear;
+// total the amount of coffee drank by multiplying daysPerWeek by weeksPerYear and then by cupsPerDay
+var totalCoffee = Number(daysPerWeek) * weeksPerYear * Number(cupsPerDay);
 
 
 
