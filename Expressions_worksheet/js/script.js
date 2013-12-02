@@ -33,20 +33,20 @@ var people = 27;
 // setting the number of pizzas ordered.
 var pizzas = 5;
 
-// calculating the number of slices each person will get.
+// multiply pizzas and slices, then divide by people to get the slices per person.
 var slicesPerPerson = pizzas * slices / people;
 
-// Output the results
+// Output the results of slices per person.
 console.log("Each person ate " + slicesPerPerson + " slices of pizza at the party.")
 
 
 
 // Slice of Pie part II
 
-// setting number of slices Sparky will get.
+// multiply pizzas by slices then divide by people, using modulo to show the remainder.
 var sparkySlices = pizzas * slices % people;
 
-// Output the results.
+// Output the results to show how many slices Sparky ate.
 console.log("Sparky got " + sparkySlices + " slices of pizza.")
 
 
@@ -58,13 +58,13 @@ console.log("Sparky got " + sparkySlices + " slices of pizza.")
 // setting the past five grocery totals.
 var weeklyTotals = [100, 75, 80, 45, 90];
 
-// getting the total amount spent.
+// getting the total amount spent by adding the weekly totals.
 var totalAmountSpent = weeklyTotals[0] + weeklyTotals[1] + weeklyTotals[2] + weeklyTotals[3] + weeklyTotals[4];
 
-// getting the average weekly amount spent.
+// getting the average weekly amount spent by dividing the total amount spent by 5.
 var weeklyAverage = totalAmountSpent / 5;
 
-// output the results
+// output the results of the total amount spent and the weekly average.
 console.log("You have spent a total of $" + totalAmountSpent + " on groceries over 5 weeks. That is an average of $" + weeklyAverage + " per week");
 
 
@@ -85,10 +85,10 @@ var item = "dress shoes";
 // setting sales tax percentage
 var salesTax = 5;
 
-// calculating price of item without tax
+// calculating price of item without tax. Subtract the originalPrice from the originalPrice multiplied by the percentDiscount divided by 100.
 var itemNoTax = originalPrice - originalPrice * percentDiscount / 100;
 
-// calculating price of item with tax
+// calculating price of item with tax. Add the itemNotax to the salesTax multiplied by itemNoTax divided by 100.
 var itemWithTax = itemNoTax + salesTax * itemNoTax / 100;
 
 // output the results
