@@ -75,3 +75,17 @@ var overtimeHoursThur = prompt("Total Normal Hours: " + totalNormalHours + "\nTo
 // adjusting the total of overtime hours by adding thursday's hours to the previous total.
 totalOvertimeHours += Number(overtimeHoursThur);
 
+//prompt the user to enter the amount of normal hours worked on friday and save it to normalHoursFri. Include the running total of normal and overtime hours in the prompt.
+var normalHoursFri = prompt("Total Normal Hours: " + totalNormalHours + "\nTotal Overtime Hours: " + totalOvertimeHours + "\nPlease enter the number of Normal Hours worked on Friday.");
+
+// adjusting the total of normal hours by adding friday's hours to the previous total.
+totalNormalHours += Number(normalHoursFri);
+
+//prompt the user to enter the amount of overtime hours worked on friday and save it to overtimeHoursFri. Include the running total of normal and overtime hours in the prompt.
+var overtimeHoursFri = prompt("Total Normal Hours: " + totalNormalHours + "\nTotal Overtime Hours: " + totalOvertimeHours + "\nPlease enter the number of Overtime Hours worked on Friday.");
+
+// adjusting the total of overtime hours by adding friday's hours to the previous total.
+totalOvertimeHours += Number(overtimeHoursFri);
+
+console.log(totalNormalHours, totalOvertimeHours);
+
