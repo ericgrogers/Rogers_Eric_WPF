@@ -96,6 +96,9 @@ var overtimePayTotal = Number(totalOvertimeHours) * Number(overtimeRate);
 // add normalPayTotal to overtimePayTotal to get the totalPay.
 var totalPay = Number(normalPayTotal) + Number(overtimePayTotal);
 
+// creating the check by outputting the company name, the employee's name, and total pay with a console message.
+var check = "Check to be printed: \n \nCompany Name: " + companyName + "\n \nPay to the order of: " + employee + ", Amount: $" + totalPay;
 
-console.log(totalNormalHours, totalOvertimeHours, normalPayTotal, overtimePayTotal, totalPay);
+
+console.log(check);
 
