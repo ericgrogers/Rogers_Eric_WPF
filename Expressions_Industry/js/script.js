@@ -21,3 +21,10 @@ var hourlyRate = prompt("Please enter the normal hourly rate paid to the employe
 // getting the overtime rate to be paid to the employee by using a prompt
 var overtimeRate = prompt("Please enter the overtime rate paid to the employee.");
 
+// prompt the user to enter the amount of normal hours worked on Monday and save it to normalHoursMon
+var normalHoursMon = prompt("Please enter the number of Normal Hours worked on Monday.");
+
+// prompt the user to enter the amount of overtime hours worked on Monday and save it to overtimeHoursMon
+var overtimeHoursMon = prompt("Please enter the number of Overtime Hours worked on Monday.")
+
+
