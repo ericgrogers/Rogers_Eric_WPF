@@ -12,6 +12,12 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // getting the company's name from the user by using a prompt
 var companyName = prompt("Please enter the Company name to be printed on the check.");
 
-// getting the name of the employee to receive the paycheck
+// getting the name of the employee to receive the paycheck by using a prompt
 var employee = prompt("Please enter the name of the Employee to be printed on the check.");
+
+// getting the hourly rate to be paid to the employee by using a prompt
+var hourlyRate = prompt("Please enter the normal hourly rate paid to the employee.");
+
+// getting the overtime rate to be paid to the employee by using a prompt
+var overtimeRate = prompt("Please enter the overtime rate paid to the employee.");
 
