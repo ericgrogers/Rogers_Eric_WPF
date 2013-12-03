@@ -24,12 +24,15 @@ var cupsPerDay = prompt("When you do drink Coffee, how many cups of Coffee do yo
 var weeksPerYear = 52;
 
 // total the amount of coffee drank by multiplying daysPerWeek by weeksPerYear and then cupsPerDay
-var totalCoffee = Number(daysPerWeek) * weeksPerYear * Number(cupsPerDay) ;
+var totalCoffee = Number(daysPerWeek) * weeksPerYear * Number(cupsPerDay);
+
+// multiplying pricePerCup by totalCoffee to get the totalPrice
+var totalPrice = Number(pricePerCup) * Number(totalCoffee);
 
 
 
 
 
-console.log(pricePerCup, daysPerWeek, cupsPerDay, totalCoffee);
+console.log(pricePerCup, daysPerWeek, cupsPerDay, totalCoffee, totalPrice);
 
 
