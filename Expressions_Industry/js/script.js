@@ -107,7 +107,7 @@ var totalHours = Number(totalNormalHours) + Number(totalOvertimeHours);
 var check = "Check to be printed: \n \nCompany Name: " + companyName + "     Date: " + date + "\n \nPay to the order of: " + employee + ", Amount: $" + totalPay;
 
 // creating the check stub by saving the company's name, the employees name, the total normal hours worked, the total overtime hours worked, the total normal pay, the total overtime pay, and the total pay to the checkStub variable.
-var checkStub = "\n \nCheck Stub to be printed: \n \nCompany Name: " + companyName + "\nEmployee Name: " + employee + "Date:     " + date + "\n \nNormal Hours: " + totalNormalHours + "     Normal Wages: $" + normalPayTotal + "\n \nOvertime Hours: " + totalOvertimeHours + "     Overtime Wages: $" + overtimePayTotal + "\n \nTotal Hours: " + totalHours + "     Total Wages: $" + totalPay;
+var checkStub = "\n \nCheck Stub to be printed: \n \nCompany Name: " + companyName + "\nEmployee Name: " + employee + "     Date:     " + date + "\n \nNormal Hours: " + totalNormalHours + "     Normal Wages: $" + normalPayTotal + "\n \nOvertime Hours: " + totalOvertimeHours + "     Overtime Wages: $" + overtimePayTotal + "\n \nTotal Hours: " + totalHours + "     Total Wages: $" + totalPay;
 
 // creating a result variable to hold the check and checkStub.
 var result = check + checkStub;
