@@ -87,5 +87,15 @@ var overtimeHoursFri = prompt("Total Normal Hours: " + totalNormalHours + "\nTot
 // adjusting the total of overtime hours by adding friday's hours to the previous total.
 totalOvertimeHours += Number(overtimeHoursFri);
 
-console.log(totalNormalHours, totalOvertimeHours);
+// multiply totalNormalHours by hourlyRate to get the total of normal pay (normalPayTotal).
+var normalPayTotal = Number(totalNormalHours) * Number(hourlyRate);
+
+// multiply totalOvertimeHours by overtimeRate to get the total of overtime pay (overtimePayTotal).
+var overtimePayTotal = Number(totalOvertimeHours) * Number(overtimeRate);
+
+// add normalPayTotal to overtimePayTotal to get the totalPay.
+var totalPay = Number(normalPayTotal) + Number(overtimePayTotal);
+
+
+console.log(totalNormalHours, totalOvertimeHours, normalPayTotal, overtimePayTotal, totalPay);
 
