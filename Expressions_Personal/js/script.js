@@ -18,13 +18,13 @@ var pricePerCup = prompt("How much do you pay for a cup of Coffee?");
 var daysPerWeek = prompt("How many days per week do you drink Coffee?");
 
 // ask the user how many cups of coffee is drank per day and save it to cupsPerDay
-var cupsPerDay = prompt("How many cups of Coffee do you drink per day?");
+var cupsPerDay = prompt("When you do drink Coffee, how many cups of Coffee do you drink per day?");
 
 // setting the weeks per year
 var weeksPerYear = 52;
 
-// total the amount of coffee drank by multiplying daysPerWeek by weeksPerYear and then by cupsPerDay
-var totalCoffee = Number(daysPerWeek) * weeksPerYear * Number(cupsPerDay);
+// total the amount of coffee drank by multiplying daysPerWeek by weeksPerYear and then cupsPerDay
+var totalCoffee = Number(daysPerWeek) * weeksPerYear * Number(cupsPerDay) ;
 
 
 
