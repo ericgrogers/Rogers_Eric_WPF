@@ -29,10 +29,5 @@ var totalCoffee = Number(daysPerWeek) * weeksPerYear * Number(cupsPerDay);
 // multiplying pricePerCup by totalCoffee to get the totalPrice
 var totalPrice = Number(pricePerCup) * Number(totalCoffee);
 
-
-
-
-
-console.log(pricePerCup, daysPerWeek, cupsPerDay, totalCoffee, totalPrice);
-
-
+// output all results to the console. This is concatenating strings and variables together to display text along with the data stored in the variables.
+console.log("At $" + pricePerCup + " per cup of Coffee, if I drink " + cupsPerDay + " cups per day, " + daysPerWeek + " days per week, it will cost me $" + totalPrice + " per year.");
