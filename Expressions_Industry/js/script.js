@@ -25,10 +25,10 @@ var companyName = prompt("Please enter the Company name to be printed on the che
 var employee = prompt("Please enter the name of the Employee to be printed on the check.");
 
 // getting the hourly rate to be paid to the employee by using a prompt
-var hourlyRate = prompt("Please enter the normal hourly rate paid to the employee.");
+var hourlyRate = prompt("Please enter the normal hourly rate paid to the employee. (Please use numbers only.)");
 
 // getting the overtime rate to be paid to the employee by using a prompt
-var overtimeRate = prompt("Please enter the overtime rate paid to the employee.");
+var overtimeRate = prompt("Please enter the overtime rate paid to the employee. (Please use numbers only.)");
 
 // prompt the user to enter the amount of normal hours worked on Monday and save it to normalHoursMon
 var normalHoursMon = prompt("Total Normal Hours: " + totalNormalHours + "\nTotal Overtime Hours: " + totalOvertimeHours + "\nPlease enter the number of Normal Hours worked on Monday.");
