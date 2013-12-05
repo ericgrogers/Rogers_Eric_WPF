@@ -7,3 +7,11 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // Expressions: Wacky
 // 12/04/2013
 
+// For this problem the user will guess, "How many Muppets would it take to move my house?"
+
+// Decalaring variables here.
+
+// setting the initial muppet count to 20.
+var muppetCount = 20;
+var rooms;
+var miles;
