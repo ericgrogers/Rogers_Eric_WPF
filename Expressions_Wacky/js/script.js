@@ -51,7 +51,7 @@ totalMuppets /= 2;
 if (guessDifference == 0) {
 	alert ("You guessed that it would take " + guess + " Muppets to move your house and you were right! \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");
 } else {
-	
+	alert("You guessed that it would take " + guess + " Muppets to move your house and you were off by " + guessDifference + " Muppets. \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");
 }
 
 console.log(muppetCount[0], muppetCount[1], rooms);
