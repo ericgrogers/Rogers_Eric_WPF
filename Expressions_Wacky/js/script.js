@@ -56,12 +56,14 @@ guessDifference = Number(totalMuppets) - Number(guess);
 // dividing the totalMuppets by 2.
 totalMuppets /= 2;
 
+// if the guessDifference is equal to 0 (which means the user guessed correctly), send a console message and prompt message of the entire results.
 if (guessDifference == 0) {
-	console.log("You guessed that it would take " + guess + " Muppets to move your house and you were right! \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");	
+	console.log("You guessed that it would take " + guess + " Muppets to move your house and you were right! \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");
+	
 	alert ("You guessed that it would take " + guess + " Muppets to move your house and you were right! \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");
+
+// otherwise, tell the user the difference between their guess and the actual number of muppets in a console.log and an alert message, along with the entire results.	
 } else {
 	console.log("You guessed that it would take " + guess + " Muppets to move your house and you were off by " + guessDifference + " Muppets. \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");
 	alert("You guessed that it would take " + guess + " Muppets to move your house and you were off by " + guessDifference + " Muppets. \nIt took " + totalMuppets + " Muppets to cut your house up and move it " + miles + " miles, and " + totalMuppets + " Muppets to rebuild it in it's new place. \nYou might be happy to know that your house now has " + rooms + " rooms!");
 }
-
-console.log(muppetCount[0], muppetCount[1], rooms);
