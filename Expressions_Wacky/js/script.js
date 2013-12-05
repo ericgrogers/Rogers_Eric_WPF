@@ -14,7 +14,9 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // setting the initial muppet count to 20 using an array.
 var muppetCount = [20];
 var rooms;
+var roomsInt;
 var miles;
+var milesInt;
 var guess;
 
 // prompting the user to guess the total muppets, then storing the guess in the variable guess.
