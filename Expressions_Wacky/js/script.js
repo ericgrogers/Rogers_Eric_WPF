@@ -47,11 +47,13 @@ if (miles >= 100) {
 	muppetCount[0] /= 2;
 }
 
-
+// adding muppetCount[0] and muppetCount[1] then saving the result in totalMuppets.
 totalMuppets = muppetCount[0] + muppetCount[1];
 
+// subtracting the user's guess from the totalMuppets to get the guessDifference.
 guessDifference = Number(totalMuppets) - Number(guess);
 
+// dividing the totalMuppets by 2.
 totalMuppets /= 2;
 
 if (guessDifference == 0) {
