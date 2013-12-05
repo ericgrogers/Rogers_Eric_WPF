@@ -17,6 +17,7 @@ var totalMuppets;
 var rooms;
 var miles;
 var guess;
+var guessDifference;
 
 
 // prompting the user to guess the total muppets, then storing the guess in the variable guess.
@@ -41,6 +42,11 @@ if (miles >= 100) {
 	muppetCount[0] /= 2;
 }
 
+totalMuppets = muppetCount[0] + muppetCount[1];
+
+guessDifference = Number(totalMuppets) - Number(guess);
+
+totalMuppets /= 2;
 
 
 console.log(muppetCount[0], muppetCount[1], rooms);
