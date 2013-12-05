@@ -11,7 +11,7 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 
 // Decalaring variables here.
 
-// setting the initial muppet count to 20.
-var muppetCount = 20;
+// setting the initial muppet count to 20 using an array.
+var muppetCount = [20];
 var rooms;
 var miles;
