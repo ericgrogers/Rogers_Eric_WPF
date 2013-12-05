@@ -32,15 +32,21 @@ miles = prompt("How many miles will the Muppets be moving your house?");
 // setting the amount of rooms to be rebuilt by multiplying rooms by 3 and saving the result to rooms.
 rooms *= 3;
 
+// if the miles entered by the user is greater than or equal to 100, set the muppetCount[1] to 100. Then subtract the number of rooms from rooms (to get 0).
 if (miles >= 100) {
 	muppetCount[1] = 100;
 	rooms -= Number(rooms);
+	
+// or, if miles is greater than or equal to 10, set the muppetCount[1] to 20 and then subtract 1 from rooms.
 } else if (miles >= 10) {
 	muppetCount[1] = 20;
 	rooms -= 1;
+
+// otherwise, if miles is less than or equal to 9, divide the muppetCount[0] by 2.
 } else if (miles <= 9) {
 	muppetCount[0] /= 2;
 }
+
 
 totalMuppets = muppetCount[0] + muppetCount[1];
 
