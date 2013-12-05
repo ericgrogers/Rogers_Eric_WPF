@@ -12,10 +12,12 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // Decalaring variables here.
 
 // setting the initial muppet count to 20 using an array.
-var muppetCount = [20];
+var muppetCount = [20, 10];
+var totalMuppets;
 var rooms;
 var miles;
 var guess;
+
 
 // prompting the user to guess the total muppets, then storing the guess in the variable guess.
 guess = prompt("Guess how many Muppets it would take to move your house! (numbers only please)");
@@ -28,3 +30,17 @@ miles = prompt("How many miles will the Muppets be moving your house?");
 
 // setting the amount of rooms to be rebuilt by multiplying rooms by 3 and saving the result to rooms.
 rooms *= 3;
+
+if (miles >= 100) {
+	muppetCount[1] = 100;
+	rooms -= Number(rooms);
+} else if (miles >= 10) {
+	muppetCount[1] = 20;
+	rooms -= 1;
+} else if (miles <= 9) {
+	muppetCount[0] /= 2;
+}
+
+
+
+console.log(muppetCount[0], muppetCount[1], rooms);
