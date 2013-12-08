@@ -17,6 +17,7 @@ whether they should stop now for gas or not. */
 var gasEfficiency ;
 var gasGauge ;
 var tankCapacity ;
+var gallonsInTank ;
 var totalMiles ;
 
 // asking user to enter the fuel efficiency of their vehicle with a prompt.
@@ -28,6 +29,9 @@ gasGauge = prompt("Please enter the readout of your gas gauge, where 0 is empty,
 // ask the user for the capacity of the gas tank.
 tankCapacity = prompt("How many gallons of gas does the car's tank hold?");
 
+// divide gasGauge by 100 to get the percentage in decimal form, then multiply by tankCapacity to get the gallonsInTank.
+gallonsInTank = Number(gasGauge) / 100 * Number(tankCapacity);
+
+// divide gasGauge by 100 to get the percentage in decimal form, then multiply by tankCapacity, then multiply by gasEfficiency to get totalMiles car can travel.
 totalMiles = Number(gasGauge) / 100 * Number(tankCapacity) * gasEfficiency;
 
-alert(totalMiles);
