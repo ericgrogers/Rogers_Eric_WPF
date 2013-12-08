@@ -19,6 +19,7 @@ var gasGauge ;
 var tankCapacity ;
 var gallonsInTank ;
 var totalMiles ;
+var results ;
 
 // asking user to enter the fuel efficiency of their vehicle with a prompt.
 gasEfficiency = prompt("How many miles per gallon does your vehicle get?");
@@ -34,4 +35,9 @@ gallonsInTank = Number(gasGauge) / 100 * Number(tankCapacity);
 
 // divide gasGauge by 100 to get the percentage in decimal form, then multiply by tankCapacity, then multiply by gasEfficiency to get totalMiles car can travel.
 totalMiles = Number(gasGauge) / 100 * Number(tankCapacity) * gasEfficiency;
+
+// if the totalMiles are greater than 200, results =  "Yes, you can make it..." otherwise, results = "You only have gallonsInTank ..."
+results = (totalMiles > 200) ? "Yes, you can make it without stopping for gas!" : "You only have " + gallonsInTank +
+    " gallons of gas in your tank, better get gas now while you can!";
+
 
