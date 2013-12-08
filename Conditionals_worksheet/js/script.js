@@ -7,6 +7,7 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // 12/07/2013
 // Conditionals Worksheet
 
+// Group 1 : Expressions with Conditionals.
 // Last Chance for Gas!
 
 /* A driver has to determine if they can make it across the desert with their current fuel.
@@ -17,8 +18,14 @@ whether they should stop now for gas or not. */
 var gasEfficiency ;
 var gasGauge ;
 var tankCapacity ;
+
+// declaring variable for total gallons of gas in the car's tank.
 var gallonsInTank ;
+
+// declaring variable for the total miles that the car can go.
 var totalMiles ;
+
+// declaring a variable to hold the final results.
 var results ;
 
 // asking user to enter the fuel efficiency of their vehicle with a prompt.
@@ -44,3 +51,29 @@ console.log(results);
 
 // creating an alert with the results.
 alert(results);
+
+
+
+
+// Group 2 : Multiple Results
+// Grade Letter Calculator
+
+/* 
+A+ 95-100
+A  90-94
+B+ 85-89
+B  80-84
+C+ 76-79
+C  73-75
+D  70-72
+F  0-69
+*/
+
+// declaring the givens as variables.
+var grade ;
+
+// declaring variable for the letter grade results.
+var letterGrade ;
+
+
+
