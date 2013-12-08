@@ -10,11 +10,19 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // Last Chance for Gas!
 
 /* A driver has to determine if they can make it across the desert with their current fuel.
- They are about to past the last gas station for the next 200 miles and they need to determine
- whether they should stop now for gas or not. */
+They are about to past the last gas station for the next 200 miles and they need to determine
+whether they should stop now for gas or not. */
 
 // declaring the givens as variables
 var gasEfficiency ;
 var gasGauge ;
 var tankCapacity ;
 
+// asking user to enter the fuel efficiency of their vehicle with a prompt.
+gasEfficiency = prompt("How many miles per gallon does your vehicle get?");
+
+// asking user to enter the reading of their gas gauge with a prompt.
+gasGauge = prompt("Please enter the readout of your gas gauge, where 0 is empty, and 100 is full.");
+
+// ask the user for the capacity of the gas tank.
+tankCapacity = prompt("How many gallons of gas does the car's tank hold?");
