@@ -10,10 +10,6 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // Group 1 : Expressions with Conditionals.
 // Last Chance for Gas!
 
-/* A driver has to determine if they can make it across the desert with their current fuel.
-They are about to past the last gas station for the next 200 miles and they need to determine
-whether they should stop now for gas or not. */
-
 // declaring the givens as variables
 var gasEfficiency ;
 var gasGauge ;
@@ -57,17 +53,6 @@ alert(results);
 
 // Group 2 : Multiple Results
 // Grade Letter Calculator
-
-/* 
-A+ 95-100
-A  90-94
-B+ 85-89
-B  80-84
-C+ 76-79
-C  73-75
-D  70-72
-F  0-69
-*/
 
 // declaring the givens as variables.
 var grade ;
@@ -117,3 +102,19 @@ console.log("You have a " + grade + "%, which means you have earned a(n) " + let
 
 // show an alert of the results
 alert("You have a " + grade + "%, which means you have earned a(n) " + letterGrade + " in the class!");
+
+
+
+// Group 3 : Multiple Conditions.
+// Tire Pressure I
+
+// declaring the givens as variables
+var tirePressure = [];
+
+// declaring a variable to store the results.
+var results ;
+
+// get the pressure of the front left tire from the user and store it in the first index of the array.
+tirePressure[0] = prompt("Please enter the pressure of the front left tire.");
+
+
