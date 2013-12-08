@@ -94,4 +94,12 @@ if (grade >= 95) {
 // otherwise, if the percentage is 80 or above, letterGrade is B.
 }else if (grade >= 80) {
 	letterGrade = "B";
+	
+// otherwise, if the percentage is 76 or above, letterGrade is C+.
+}else if (grade >= 76) {
+	letterGrade = "C+";
+
+// otherwise, if the percentage is 73 or above, letterGrade is C.
+}else if (grade >= 73) {
+	letterGrade = "C";
 }
