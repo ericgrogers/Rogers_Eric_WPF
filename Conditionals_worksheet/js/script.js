@@ -111,8 +111,6 @@ alert("You have a " + grade + "%, which means you have earned a(n) " + letterGra
 // declaring the givens as variables
 var tirePressure = [];
 
-// declaring a variable to store the results.
-var results ;
 
 // get the pressure of the front left tire from the user and store it in the first index of the array.
 tirePressure[0] = prompt("Please enter the pressure of the front left tire.");
@@ -129,4 +127,9 @@ tirePressure[3] = prompt("Please enter the pressure of the rear right tire.");
 // if the front left pressure is equal to the front right pressure, and the rear left pressure is the same as the rear right pressure, the tires pass, otherwise, they need to be checked out.
 results = (tirePressure[0] === tirePressure[1] && tirePressure[2] === tirePressure[3]) ? "The tires pass spec!" : "Get your tires checked out!";
 
+// outputting the results to the console.
 console.log(results);
+
+// outputting the results with an alert.
+alert(results);
+
