@@ -106,4 +106,14 @@ if (grade >= 95) {
 // otherwise, if the percentage is 70 or above, letterGrade is D.
 }else if (grade >= 70) {
 	letterGrade = "D";
+	
+// otherwise, letterGrade is F.
+}else{
+	letterGrade = "F";
 }
+
+// print out the result with a console log.
+console.log("You have a " + grade + "%, which means you have earned a(n) " + letterGrade + " in the class!");
+
+// show an alert of the results
+alert("You have a " + grade + "%, which means you have earned a(n) " + letterGrade + " in the class!");
