@@ -37,7 +37,10 @@ gallonsInTank = Number(gasGauge) / 100 * Number(tankCapacity);
 totalMiles = Number(gasGauge) / 100 * Number(tankCapacity) * gasEfficiency;
 
 // if the totalMiles are greater than 200, results =  "Yes, you can make it..." otherwise, results = "You only have gallonsInTank ..."
-results = (totalMiles > 200) ? "Yes, you can make it without stopping for gas!" : "You only have " + gallonsInTank +
-    " gallons of gas in your tank, better get gas now while you can!";
+results = (totalMiles > 200) ? "Yes, you can make it without stopping for gas!" : "You only have " + gallonsInTank + " gallons of gas in your tank, better get gas now while you can!";
 
+// outputting results to the console.
+console.log(results);
 
+// creating an alert with the results.
+alert(results);
