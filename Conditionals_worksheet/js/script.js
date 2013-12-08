@@ -125,3 +125,7 @@ tirePressure[2] = prompt("Please enter the pressure of the rear left tire.");
 
 // get the pressure of the rear right tire from the user and store it in the forth index of the array.
 tirePressure[3] = prompt("Please enter the pressure of the rear right tire.");
+
+// if the front left pressure is equal to the front right pressure, and the rear left pressure is the same as the rear right pressure, the tires pass, otherwise, they need to be checked out.
+results = (tirePressure[0] === tirePressure[1] && tirePressure[2] === tirePressure[3]) ? "The tires pass spec!" : "Get your tires checked out!";
+
