@@ -117,4 +117,5 @@ var results ;
 // get the pressure of the front left tire from the user and store it in the first index of the array.
 tirePressure[0] = prompt("Please enter the pressure of the front left tire.");
 
-
+// get the pressure of the front right tire from the user and store it in the second index of the array.
+tirePressure[1] = prompt("Please enter the pressure of the front right tire.");
