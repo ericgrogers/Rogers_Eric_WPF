@@ -75,5 +75,15 @@ var grade ;
 // declaring variable for the letter grade results.
 var letterGrade ;
 
+// ask the user to enter their grade percentage using a prompt and store it in the grade variable.
+grade = prompt("Please enter your grade percentage, (numbers only please).");
 
+//checking the grade percentage and returning the proper letter grade.
+// if the percentage is from 95 to 100, letterGrade is A+.
+if (grade >= 95) {
+	letterGrade = "A+";
 
+//otherwise, if the percentage is 90 or above, letterGrade is A.
+}else if (grade >= 90) {
+	letterGrade = "A";
+}
