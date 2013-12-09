@@ -43,6 +43,17 @@ if (vacationPrice === ""){
 	
 	// otherwise, continue.
 	}else{
+	
+		// ask the user how much spending money they will need and save it to the spendingMoney variable.
+		spendingMoney = prompt("How much spending money will you need on the vacation?");
 		
+		// if the spendingMoney variable is empty, prompt the user again.
+		if (spendingMoney === ""){
+			spendingMoney = prompt("I'm sorry, you must enter a number. \nHow much spending money will you need on the vacation?");
+			
+		// otherwise, continue.
+		}else{
+			
+		}
 	}
 }
