@@ -65,7 +65,7 @@ if (vacationPrice === ""){
 			// otherwise, continue.
 			}else{
 				
-				// ask user how much they pay for water and save it to the water variable.
+				// ask user how much they pay for water  with a prompt and save it to the water variable.
 				water = prompt("How much do you pay monthly for water?");
 				
 				// if the water variable is empty, prompt the user again.
@@ -75,7 +75,7 @@ if (vacationPrice === ""){
 				// otherwise, continue.
 				}else{
 					
-					// ask the user how much they pay for their home and save it to the home variable.
+					// ask the user how much they pay for their home  with a prompt and save it to the home variable.
 					home = prompt("How much do you pay monthly for your home? (rent or mortgage)");
 					
 					// if the home variable is empty, prompt the user again.
@@ -83,7 +83,27 @@ if (vacationPrice === ""){
 						home = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for your home? (rent or mortgage)");
 					
 					// otherwise, continue.	
-					}else
+					}else{
+						
+						// ask the user how much they pay for their phone with a prompt and save it to the phone variable.
+						phone = prompt("How much do you pay monthly for your phone?");
+						
+						// if the phone variable is empty, prompt the user again.
+						if (phone === ""){
+							phone = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for your phone?");
+							
+						// otherwise, continue.
+						}else{
+							
+							// ask the user how much they pay for insurance with a prompt and save it to the insurance variable.
+							insurance = prompt("How much do you pay monthly for insurance?");
+							
+							// if the insurance variable is empty, propmt the user again.
+							if (insurance === ""){
+								insurance = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for insurance?");
+							}
+						}
+					}
 				}
 			}
 		}
