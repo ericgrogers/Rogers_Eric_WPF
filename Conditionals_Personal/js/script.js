@@ -24,3 +24,25 @@ var spendingMoney;
 var monthsToSave;
 var results;
 
+// ask the user for the price of the vacation package with a prompt and save it to the vacationPrice variable.
+vacationPrice = prompt("What is the price of the vacation package?");
+
+// if the vacationPrice variable is empty, prompt the user again.
+if (vacationPrice === ""){
+	vacationPrice = prompt("I'm sorry, you must enter a number. \nWhat is the price of the vacation package?");
+
+// otherwise, continue.
+}else{
+
+	// ask the user for their monthly salary with a prompt and save it to the monthlySalary variable.
+	monthlySalary = prompt("Please enter your monthly salary (after deductions)");
+	
+	//if the monthlySalary variable is empty, prompt the user again.
+	if (monthlySalary === ""){
+		monthlySalary = prompt("I'm sorry, you must enter a number. \nPlease enter your monthly salary (after deductions)");
+	
+	// otherwise, continue.
+	}else{
+		
+	}
+}
