@@ -101,6 +101,28 @@ if (vacationPrice === ""){
 							// if the insurance variable is empty, propmt the user again.
 							if (insurance === ""){
 								insurance = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for insurance?");
+								
+							// otherwise, continue.	
+							}else{
+								
+								// adding up the bills and storing the total in the monthlySpending variable.
+								monthlySpending = Number(electric) + Number(water) + Number(home) + Number(phone) + Number(insurance);
+								
+								// subtracting the monthlySpending from the monthlySalary and saving the results in the monthlyExtraMoney variable.
+								monthlyExtraMoney = Number(monthlySalary) - Number(monthlySpending);
+								
+								// if the monthlyExtraMoney variable is less than or equal to 0, tell the user that they can't afford a vacation.
+								if (monthlyExtraMoney <= 0){
+									
+									// saving the output to the results variable.
+									results = "I'm sorry, you don't make enough money to take a vacation!";
+									
+								// otherwise, continue.	
+								}else{
+									
+									// adding vacationPrice to spendingMoney and then dividing by monthlyExtraMoney and save the results to the monthsToSave variable.
+									monthsToSave = (Number(vacationPrice) + Number(spendingMoney)) / Number(monthlyExtraMoney);
+								}
 							}
 						}
 					}
