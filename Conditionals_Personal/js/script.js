@@ -54,6 +54,38 @@ if (vacationPrice === ""){
 		// otherwise, continue.
 		}else{
 			
+			// Start of the Bills section.
+			// ask user how much they pay for electric with a prompt and save it to the electric variable.
+			electric = prompt("How much do you pay monthly for electric?");
+			
+			// if the electric variable is empty, prompt the user again.
+			if (electric === ""){
+				electric = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for electric?");
+				
+			// otherwise, continue.
+			}else{
+				
+				// ask user how much they pay for water and save it to the water variable.
+				water = prompt("How much do you pay monthly for water?");
+				
+				// if the water variable is empty, prompt the user again.
+				if (water === ""){
+					water = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for water?");
+				
+				// otherwise, continue.
+				}else{
+					
+					// ask the user how much they pay for their home and save it to the home variable.
+					home = prompt("How much do you pay monthly for your home? (rent or mortgage)");
+					
+					// if the home variable is empty, prompt the user again.
+					if (home === ""){
+						home = prompt("I'm sorry, you must enter a number. \nHow much do you pay monthly for your home? (rent or mortgage)");
+					
+					// otherwise, continue.	
+					}else
+				}
+			}
 		}
 	}
 }
