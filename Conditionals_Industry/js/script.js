@@ -26,3 +26,54 @@ var retainer; // retainer fee
 var onePayment; // for one additional payment
 var twoPayments; // for two additional payments
 var results; // final results
+
+// visual design prompts.
+
+// ask if the client wants visual design services and save the answer to "reply"
+reply = prompt('Does the client want Visual Design services? (please type either "yes" or "no")');
+
+// if reply is empty,
+if (reply === ""){
+	
+	// prompt the user a second time, and save the answer to "reply"
+    reply = prompt('Please answer the question, does the client want Visual Design services? (please type either "yes" or "no")');
+    
+    // if reply is still empty,
+    if (reply === ""){
+    	
+    	// save "no" to reply.
+        reply = "no";
+    }
+}
+
+// if reply is exactly equal to "yes",
+if (reply === "yes"){
+
+	// ask how many hours will be required and save the answer to the visualDesigns array in the 2nd index position.
+    visualDesigns[1] = prompt("How many hours will be required for Visual Designs? (numbers only please)");
+    
+    // if visualDesigns[1] is empty, or is exactly equal to 0,
+    if (visualDesigns[1] === "" || visualDesigns[1] === 0){
+    
+    	// prompt the user a second time and save the answer to the visualDesigns array in the 2nd index position.
+        visualDesigns[1] = prompt("Please answer the question, how many hours will be required for Visual Designs? (cannot be 0)");
+        
+        // if visualDesigns[1] is still empty, or exactly equal to 0,
+        if (visualDesigns[1] === "" || visualDesigns[1] === 0){
+        
+        	// set visualDesigns[1] to 0;
+            visualDesigns[1] = 0;
+            
+            // save "no" to reply.
+            reply = "no";
+        
+        //otherwise,
+        }else{
+        
+        	// reset reply to "no".
+            reply = "no";
+        }
+    }
+}
+
+
