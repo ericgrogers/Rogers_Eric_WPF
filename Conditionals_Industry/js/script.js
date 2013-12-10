@@ -76,4 +76,53 @@ if (reply === "yes"){
     }
 }
 
+// html css template prompts
+
+// ask if the client wants HTML/CSS template services and save the answer to "reply".
+reply = prompt('Does the client want HTML/CSS Template services? (please type "yes" or "no")');
+
+// if reply is empty,
+if (reply === ""){
+
+	// prompt the user a second time and save the answer to reply.
+    reply = prompt('Please answer the question, does the client want HTML/CSS Template services? (please type either "yes" or "no")');
+
+	// if reply is still empty,
+    if (reply === ""){
+    
+    	// save "no" to reply.
+        reply = "no";
+    }
+}
+
+// if reply is exactly equal to "yes"
+if (reply === "yes"){
+
+	// ask how many hours are required and save the answer to the htmlCssTemplates array in the 2nd index position.
+    htmlCssTemplates[1] = prompt("How many hours will be required for the Template services? (numbers only please)");
+    
+    // if htmlCssTemplates is empty, or is 0,
+    if (htmlCssTemplates[1] === "" || htmlCssTemplates[1] === 0){
+     
+		// prompt the user a second time and save the answer to the htmlCssTemplates array in the 2nd index position.
+        htmlCssTemplates[1] = prompt("Please answer the question, how many hours will be required for Template services? (cannot be 0)");
+
+		// if htmlCssTemplates is still empty, or is 0,
+        if (htmlCssTemplates[1] === "" || htmlCssTemplates[1] === 0){
+        
+        	// save 0 to htmCssTemplates[1].
+            htmlCssTemplates[1] = 0;
+            
+            // save "no" to reply.
+            reply = "no";
+            
+        // otherwise,
+        }else{
+        
+        	// reset reply to no.
+            reply = "no";
+        }
+    }
+}
+
 
