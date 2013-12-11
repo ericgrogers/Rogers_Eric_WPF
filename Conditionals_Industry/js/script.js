@@ -214,5 +214,39 @@ if (reply === "yes"){
     }
 }
 
+// calculate the total hours
+
+// add up the hours required for visua design, html/css templates, and programming, then save the result to totalHours.
+totalHours = Number(visualDesigns[1]) + Number(htmlCssTemplates[1]) + Number(programming[1]);
+
+// calculate total bill
+
+// multiply the pay per hour, by the hours required for visualDesigns, htmlCssTemplates, and programming. Then, add the totals and save the result to standardBill.
+standardBill = Number(visualDesigns[0] * visualDesigns[1]) + Number(htmlCssTemplates[0] * htmlCssTemplates[1]) + Number(programming[0] * programming[1]);
+
+// if maintenaceChoice is 1,
+if (maintenanceChoice === "1"){
+
+	// add standardBill to the price of maintenance1 and save it to totalBill.
+    totalBill = standardBill + Number(maintenance1[0]);
+// otherwise if maintenanceChoice is 2,
+}else if (maintenanceChoice === "2"){
+
+	// add standardBill to the price of maintenance2 and save it to totalBill.
+    totalBill = standardBill + Number(maintenance2[0]);
+    
+// otherwise if maintenanceChoice is 3,
+}else if (maintenanceChoice === "3"){
+
+	// add standardBill to the price of maintenance3 and save it to totalBill.
+    totalBill = standardBill + Number(maintenance3[0]);
+    
+// otherwise,
+}else{
+
+	// add totalBill to totalBill and standardBill.
+    totalBill += standardBill;
+}
+
 
 
