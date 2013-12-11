@@ -29,7 +29,7 @@ var results; // final results
 
 // visual design prompts.
 
-// ask if the client wants visual design services and save the answer to "reply"
+// ask if the client wants visual design services with a prompt and save the answer to "reply"
 reply = prompt('Does the client want Visual Design services? (please type either "yes" or "no")');
 
 // if reply is empty,
@@ -78,7 +78,7 @@ if (reply === "yes"){
 
 // html css template prompts
 
-// ask if the client wants HTML/CSS template services and save the answer to "reply".
+// ask if the client wants HTML/CSS template services with a prompt and save the answer to "reply".
 reply = prompt('Does the client want HTML/CSS Template services? (please type "yes" or "no")');
 
 // if reply is empty,
@@ -117,6 +117,55 @@ if (reply === "yes"){
             reply = "no";
             
         // otherwise,
+        }else{
+        
+        	// reset reply to no.
+            reply = "no";
+        }
+    }
+}
+
+// programming prompts
+
+// ask if client wants programming services with a prompt and save the answer to reply.
+reply = prompt('Does the client want Programming services? (please type "yes" or "no")');
+
+// if reply is empty,
+if (reply === ""){
+
+	// prompt the user a second time.
+    reply = prompt('Please answer the question, does the client want Programming services? (please type either "yes" or "no")');
+    
+    // if repy is still empty,
+    if (reply === ""){
+    
+    	// save "no" to reply.
+        reply = "no";
+    }
+}
+
+// if repy is yes,
+if (reply === "yes"){
+
+	// ask the user how many hours are required with a prompt and save the answer to the programming array at index position 1.
+    programming[1] = prompt("How many hours will be required for the Programming services? (numbers only please)");
+    
+    // if the second index of programming is empty, or if the second index of programming is 0,
+    if (programming[1] === "" || programming[1] === 0){
+    
+    	// prompt the user a second time and save the answer to programming.
+        programming[1] = prompt("Please answer the question, how many hours will be required for Programming services? (cannot be 0)");
+
+		// if the second index of programming is empty, or if the second index of programming is 0,
+        if (programming[1] === "" || programming[1] === 0){
+        
+        	// the second index of programming is 0
+            programming[1] = 0;
+            
+            // save "no" to reply.
+            reply = "no";
+            
+        //otherwise,
         }else{
         
         	// reset reply to no.
