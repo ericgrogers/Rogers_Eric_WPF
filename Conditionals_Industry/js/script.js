@@ -261,6 +261,13 @@ onePayment = totalBill / 2;
 // divide totalBill by 4 and save it to twoPayments.
 twoPayments = totalBill / 4;
 
+// choose payment plan and get results.
+
+// if totalHours is greater than 120 save the output for a 2 payment plan to results. Otherwise, save the output for a 1 payment plan to results.
+results = (totalHours > 120) ? "The client will be billed a total $" + totalBill + " for " + totalHours + " hours of work. \nThe retainer fee  of $" + retainer + " is due immediately and 2 payments of $" + twoPayments + " will be made before delivery of final assets." : "The client will be billed a total $" + totalBill + " for " + totalHours + " hours of work. \nThe retainer fee  of $" + retainer + " is due immediately and 1 payment of $" + onePayment + " will be made before delivery of final assets.";
+
+// log the results to the console.
+console.log(results);
 
 
 
