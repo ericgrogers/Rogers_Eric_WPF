@@ -248,5 +248,19 @@ if (maintenanceChoice === "1"){
     totalBill += standardBill;
 }
 
+// calculate retainer
+
+// divide totalBill by 2 and save it to retainer.
+retainer = totalBill / 2;
+
+// calculate payments
+
+// divide totalBill by 2 and save it to onePayment.
+onePayment = totalBill / 2;
+
+// divide totalBill by 4 and save it to twoPayments.
+twoPayments = totalBill / 4;
+
+
 
 
