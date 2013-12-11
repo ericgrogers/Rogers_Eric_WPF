@@ -174,4 +174,45 @@ if (reply === "yes"){
     }
 }
 
+// maintenance packages
+
+// ask if the client will require a maintenance package and save the answer to reply.
+reply = prompt('Will the client require a Maintenance Package? (please type "yes" o "no")');
+
+// if reply is empty,
+if (reply === ""){
+
+	// prompt the user a second time and save the answer to reply.
+    reply = prompt('Please answer the question, will the client require a Maintenance Package? (please type "yes" or "no")');
+
+	// if reply is still empty,
+    if (reply === ""){
+
+		// save "no" to reply.
+        reply = "no";
+    }
+}
+
+// if reply is yes,
+if (reply === "yes"){
+
+	// prompt the user and explain the 3 packages, then save their choice to maintenanceChoice.
+    maintenanceChoice = prompt("Package 1: $" + maintenance1[0] + " for " + maintenance1[1] + " hours of service that expire after " + maintenance1[2] + " month. \n\nPackage 2: $" + maintenance2[0] + " for " + maintenance2[1] + " hours of service that expire after " + maintenance2[2] + " months. \n\nPackage 3: $" + maintenance3[0] + " for " + maintenance3[1] + " hours of service that expire after " + maintenance3[2] + " months. \n\nPlease make your selection by typing either 1, 2, or 3.");
+
+	// if maintenanceChoice is empty,
+    if (maintenanceChoice === ""){
+    
+    	// prompt the user again and save the answer to maintenanceChoice.
+        maintenanceChoice = prompt("Please answer the question, \n\nPackage 1: $" + maintenance1[0] + " for " + maintenance1[1] + " hours of service that expire after " + maintenance1[2] + " month. \n\nPackage 2: $" + maintenance2[0] + " for " + maintenance2[1] + " hours of service that expire after " + maintenance2[2] + " months. \n\nPackage 3: $" + maintenance3[0] + " for " + maintenance3[1] + " hours of service that expire after " + maintenance3[2] + " months. \n\nPlease make your selection by typing either 1, 2, or 3.");
+
+		// if maintenanceChoice is not 1, 2, or 3,
+        if (maintenanceChoice != "1" || maintenanceChoice != "2" || maintenanceChoice != "3"){
+            
+            // set maintenanceChoice to 0.
+            maintenanceChoice = 0;
+        }
+    }
+}
+
+
 
