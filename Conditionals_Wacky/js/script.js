@@ -44,3 +44,33 @@ if(userName === ""){
     }
 }
 
+// Rules?
+
+// ask the user if they would like to see the rules, save their answer to yesOrNo.
+yesOrNo = prompt('We are going to have a Snowball Fight! \n\nWould you like to see the rules? (please type "yes" or "no"').toLowerCase();
+
+// if yesOrNo is empty,
+if(yesOrNo === ""){
+
+	// ask the user again, do they want to see the rules, and save it to yesOrNo.
+    yesOrNo = prompt("What did you say? You want the rules or not? (yes/no)");
+
+	// if yesOrNo is still empty,
+    if(yesOrNo === ""){
+
+		// print the following to the console and then continue.
+        console.log("Alrighty then. Let's go " + userName + "!!!");
+    }
+
+// otherwise, if yesOrNo is exactly equal to "no",
+}else if(yesOrNo === "no"){
+
+	// print the following to the console.
+    console.log("You've played this before " + userName + ", I can tell!");
+
+// otherwise, if yesOrNo is exactly equal to "yes",
+}else if(yesOrNo === "yes"){
+
+	// print the following to the console.
+    console.log("Here you go " +userName+ ".\n\n" + rules);
+}
