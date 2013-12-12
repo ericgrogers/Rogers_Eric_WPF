@@ -74,3 +74,52 @@ if(yesOrNo === ""){
 	// print the following to the console.
     console.log("Here you go " +userName+ ".\n\n" + rules);
 }
+
+// set hit
+
+// generate a random number between 1 and 5, save it to hit.
+hit = Math.floor(Math.random() * 5 + 1);
+
+
+// user first guess
+
+// prompt the user to make a guess and save it to userGuess.
+userGuess = prompt("You go first " + userName + "! Make your first guess.");
+
+// if userGuess is empty,
+if(userGuess === ""){
+
+	// prompt the user again and save the answer to userGuess.
+    userGuess= prompt("You gotta guess a number to throw your snowball! What's it gonna be?");
+
+	// if userGuess is still empty,
+    if(userGuess === ""){
+
+		// print to the console the following.
+        console.log("You're too slow!\n");
+    }
+
+// otherwise, if the userGuess is greater than hit,
+}else if(userGuess > hit){
+
+	// print the following to the console.
+    console.log("Wowza! You threw that one over his head!");
+
+// otherwise, if userGuess is less than hit,
+}else if(userGuess < hit){
+
+	// print the followint to the console.
+    console.log("Looks like you need to eat your Wheaties! You threw that one too low!");
+
+// otherwise,
+}else{
+
+	// print the following to the console.
+    console.log("Great shot " + userName + "! You got a hit!");
+
+	// increment the totalUserHits by 1.
+    totalUserHits ++;
+
+	// generate a new random number and save it to hit.
+    hit = Math.floor(Math.random() * 5 +1);
+}
