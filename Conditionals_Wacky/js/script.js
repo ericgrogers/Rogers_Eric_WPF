@@ -21,3 +21,26 @@ var totalUserHits = 0; // stores the user's hit count.
 var totalFrostyHits = 0; // stores Frosty's hit count.
 var results; // stores the final results.
 var rules = "You and Frosty are going to take turns throwing snowballs. You will guess a number from 1 to 5 and try to hit Frosty more times than he hits you! You only have 3 snowballs, so make them count!"; // stores the rules for the game.
+
+// get the user's name
+
+// prompt the user for their name and save it to userName.
+userName = prompt("Please enter your Name.");
+
+// if the userName is empty,
+if(userName === ""){
+
+	// prompt the user again and save the answer to userName.
+    userName = prompt("Don't you want to be famous? Enter your Name.");
+
+	// if the userName is still empty,
+    if(userName === ""){
+
+		// set userName to "Skeerdy Cat".
+        userName = "Skeerdy Cat";
+
+		// print a taunt to Skeerdy Cat in the console.
+        console.log("That's O.K. " + userName + ", you don't have to enter a name. :-P");
+    }
+}
+
