@@ -199,3 +199,36 @@ if(userGuess === ""){
 	// generate a new random number and store it in hit.
     hit = Math.floor(Math.random() * 5 +1);
 }
+
+// Frosty second guess
+
+// print the following to the console.
+console.log("Frosty's turn!\n\n");
+
+// print Frosty's second guess to the console.
+console.log("Frosty makes a guess of " + frostyGuess + ".");
+
+// if Frosty makes a hit,
+if(frostyGuess == hit){
+
+	// increment totalFrostyHits by 1.
+    totalFrostyHits ++;
+
+	// print the following message to the console.
+    console.log("POW! Frosty nailed you!");
+
+	// generate a new random number for Frosty to use for his next guess, and store it in frostyGuess.
+    frostyGuess = Math.floor(Math.random() * 5 + 1);
+
+	// generate a new random number for hit.
+    hit = Math.floor(Math.random() * 5 + 1);
+
+// otherwise,
+}else{
+
+	// print the following message to the console.
+    console.log("SWISH! Frosty missed!");
+
+	// generate a new random number for frostyGuess.
+    frostyGuess = Math.floor(Math.random() * 5 + 1);
+}
