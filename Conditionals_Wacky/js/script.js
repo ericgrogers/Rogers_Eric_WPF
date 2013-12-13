@@ -300,3 +300,10 @@ if(frostyGuess == hit){
     console.log("SWISH! Frosty missed!");
 }
 
+// find the winner
+
+// compare the totalUserHits to totalFrostyHits and save it to results: if totalUserHits is greater than totalFrostyHits, print to the console that the user won. Otherwise if, totalUserHits is exactly the same as totalFrostyHits, print to the console that it was a tie. Otherwise, print to the console that the user lost.
+results = (totalUserHits > totalFrostyHits) ? "You Win " + userName + "!!!\nYou had " + totalUserHits + " hit(s), and Frosty had " + totalFrostyHits + " hit(s)!" : (totalUserHits == totalFrostyHits) ? "Oh Noes! It's a Tie! Guess you'll just have to play again. :-P" : "You LOSE!\n\nLooks like Frosty made a snowman out of you " + userName + "!";
+
+// print the results to the console.
+console.log(results);
