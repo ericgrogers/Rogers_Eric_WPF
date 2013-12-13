@@ -276,3 +276,27 @@ if(userGuess === ""){
     hit = Math.floor(Math.random() * 5 +1);
 }
 
+// Frosty third guess
+
+// print to the console that it is Frosty's turn.
+console.log("Frosty's turn!\n\n");
+
+// print to the console Frosty's third guess.
+console.log("Frosty makes a guess of " + frostyGuess + ".");
+
+// if Frosty makes a hit,
+if(frostyGuess == hit){
+
+	// increment totalFrostyHits by 1.
+    totalFrostyHits ++;
+
+	// print to the console a hit confirmation message.
+    console.log("POW! Frosty nailed you!");
+
+// otherwise,
+}else{
+
+	// print to the console that Frosty missed.
+    console.log("SWISH! Frosty missed!");
+}
+
