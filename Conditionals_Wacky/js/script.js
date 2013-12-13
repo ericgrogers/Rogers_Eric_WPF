@@ -156,3 +156,46 @@ if(frostyGuess == hit){
 	// generate a new random number for Frosty to use for a guess.
     frostyGuess = Math.floor(Math.random() * 5 + 1);
 }
+
+// user second guess
+
+// prompt the user to make a second guess and save it to userGuess.
+userGuess = prompt("You're turn " + userName + "! Make your guess.");
+
+// if the userGuess is empty
+if(userGuess === ""){
+
+	// prompt the user again and save the answer to userGuess.
+    userGuess= prompt("You gotta guess a number to throw your snowball! What's it gonna be?");
+
+	// if userGuess is still empty,
+    if(userGuess === ""){
+
+		// print a message to the console and continue.
+        console.log("You're too slow!\n");
+    }
+
+// otherwise if userGuess is greater than hit,
+}else if(userGuess > hit){
+
+	// print the following message.
+    console.log("Wowza! You threw that one over his head!");
+
+// otherwise if userGuess is less than hit,
+}else if(userGuess < hit){
+
+	// print to the console the following.
+    console.log("Looks like you need to eat your Wheaties! You threw that one too low!");
+
+// otherwise,
+}else{
+
+	// print the following to the console.
+    console.log("Great shot " + userName + "! You got a hit!");
+
+	// increment totalUserHits by 1.
+    totalUserHits ++;
+
+	// generate a new random number and store it in hit.
+    hit = Math.floor(Math.random() * 5 +1);
+}
