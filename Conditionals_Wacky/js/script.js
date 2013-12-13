@@ -58,20 +58,20 @@ if(yesOrNo === ""){
 	// if yesOrNo is still empty,
     if(yesOrNo === ""){
 
-		// print the following to the console and then continue.
+		// print a confirmation message to the console and continue.
         console.log("Alrighty then. Let's go " + userName + "!!!");
     }
 
 // otherwise, if yesOrNo is exactly equal to "no",
 }else if(yesOrNo === "no"){
 
-	// print the following to the console.
+	// print a confirmation message to the console.
     console.log("You've played this before " + userName + ", I can tell!");
 
 // otherwise, if yesOrNo is exactly equal to "yes",
 }else if(yesOrNo === "yes"){
 
-	// print the following to the console.
+	// print a confirmation message to the console.
     console.log("Here you go " +userName+ ".\n\n" + rules);
 }
 
@@ -95,26 +95,26 @@ if(userGuess === ""){
 	// if userGuess is still empty,
     if(userGuess === ""){
 
-		// print to the console the following.
+		// print to the console tha they are too slow.
         console.log("You're too slow!\n");
     }
 
 // otherwise, if the userGuess is greater than hit,
 }else if(userGuess > hit){
 
-	// print the following to the console.
+	// print to the console that the user threw it too high.
     console.log("Wowza! You threw that one over his head!");
 
 // otherwise, if userGuess is less than hit,
 }else if(userGuess < hit){
 
-	// print the followint to the console.
+	// print to the console that the user threw it too low.
     console.log("Looks like you need to eat your Wheaties! You threw that one too low!");
 
 // otherwise,
 }else{
 
-	// print the following to the console.
+	// print to the console a hit confirmation message.
     console.log("Great shot " + userName + "! You got a hit!");
 
 	// increment the totalUserHits by 1.
@@ -126,7 +126,7 @@ if(userGuess === ""){
 
 // Frosty first guess
 
-// print the following to the console.
+// print to the console that it is Frosty's turn.
 console.log("Frosty's turn!\n\n");
 
 // print Frosty's guess to the console
@@ -138,7 +138,7 @@ if(frostyGuess == hit){
 	// increment totalFrostyHits by 1.
     totalFrostyHits ++;
 
-	// print the following to the console.
+	// print to the console that Frosty hit the user.
     console.log("POW! Frosty nailed you!");
 
 	// generate a new random number for Frosty to use for a guess.
@@ -150,7 +150,7 @@ if(frostyGuess == hit){
 // otherwise,
 }else{
 
-	// print the following to the console.
+	// print to the console that Frosty missed.
     console.log("SWISH! Frosty missed!");
 
 	// generate a new random number for Frosty to use for a guess.
@@ -171,26 +171,26 @@ if(userGuess === ""){
 	// if userGuess is still empty,
     if(userGuess === ""){
 
-		// print a message to the console and continue.
+		// print to the console that they are too slow and continue.
         console.log("You're too slow!\n");
     }
 
 // otherwise if userGuess is greater than hit,
 }else if(userGuess > hit){
 
-	// print the following message.
+	// print to the console that they threw it too high.
     console.log("Wowza! You threw that one over his head!");
 
 // otherwise if userGuess is less than hit,
 }else if(userGuess < hit){
 
-	// print to the console the following.
+	// print to the console that they threw it too low.
     console.log("Looks like you need to eat your Wheaties! You threw that one too low!");
 
 // otherwise,
 }else{
 
-	// print the following to the console.
+	// print to the console a hit confirmation message.
     console.log("Great shot " + userName + "! You got a hit!");
 
 	// increment totalUserHits by 1.
@@ -202,7 +202,7 @@ if(userGuess === ""){
 
 // Frosty second guess
 
-// print the following to the console.
+// print to the console that it is Frosty's turn.
 console.log("Frosty's turn!\n\n");
 
 // print Frosty's second guess to the console.
@@ -214,7 +214,7 @@ if(frostyGuess == hit){
 	// increment totalFrostyHits by 1.
     totalFrostyHits ++;
 
-	// print the following message to the console.
+	// print to the console that Frosty hit the user.
     console.log("POW! Frosty nailed you!");
 
 	// generate a new random number for Frosty to use for his next guess, and store it in frostyGuess.
@@ -226,9 +226,53 @@ if(frostyGuess == hit){
 // otherwise,
 }else{
 
-	// print the following message to the console.
+	// print to the console that Frosty missed.
     console.log("SWISH! Frosty missed!");
 
 	// generate a new random number for frostyGuess.
     frostyGuess = Math.floor(Math.random() * 5 + 1);
 }
+
+// user third guess
+
+// prompt the user to make their last guess.
+userGuess = prompt("Last snowball " + userName + "! Make your guess.");
+
+// if the userGuess is empty,
+if(userGuess === ""){
+
+	// prompt the user again to make their last guess.
+    userGuess= prompt("You gotta guess a number to throw your snowball! What's it gonna be?");
+
+	// if the userGuess is still empty,
+    if(userGuess === ""){
+
+		// print to the console that the user is too slow and continue.
+        console.log("You're too slow!\n");
+    }
+
+// otherwise if userGuess is greater than hit,
+}else if(userGuess > hit){
+		
+	// print to the console that they threw it too high.
+    console.log("Wowza! You threw that one over his head!");
+
+// otherwise if, userGuess is less than hit,
+}else if(userGuess < hit){
+
+	// print to the console, that they threw it too low.
+    console.log("Looks like you need to eat your Wheaties! You threw that one too low!");
+
+// otherwise,
+}else{
+
+	// increment totalUserHits by 1.
+    totalUserHits ++;
+
+	// print to the console a hit confirmation message.
+    console.log("Great shot " + userName + "! You got a hit!");
+
+	// generate a new random number for hit.
+    hit = Math.floor(Math.random() * 5 +1);
+}
+
