@@ -43,7 +43,8 @@ var stingsPerPound = 8.666666667; // setting the stings needed per pound.
 var victimWeight = 200; // setting the victim's weight.
 
 var totalStings = calcStings(stingsPerPound, victimWeight); // call the calcStings function. Pass the variables stingsPerPound and victimWeight as the arguments, then save the returned output as totalStings.
-results = "It takes " + totalStings + " bee stings to kill this animal.";
+
+results = "It takes " + totalStings + " bee stings to kill this animal."; // setting the results with a brief message and including the totalStings.
 
 // declare and define the function
 
