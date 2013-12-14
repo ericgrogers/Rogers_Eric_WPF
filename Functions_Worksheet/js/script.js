@@ -31,3 +31,8 @@ var results = "The circumference of the circle is " + circumference;  // setting
 
 console.log(results); // print the results to the console.
 
+
+//Stung
+// It takes 8.666666667 bee stings per pound to kill an animal.
+// Calculate how many bee stings are needed to kill an animal.
+
