@@ -43,3 +43,9 @@ var victimWeight = 200;
 var totalStings = calcStings(stingsPerPound, victimWeight);
 results = "It takes " + totalStings + " bee stings to kill this animal.";
 
+// declare and define the function
+
+function calcStings(stng, lbs){
+    return stng * lbs;
+}
+
