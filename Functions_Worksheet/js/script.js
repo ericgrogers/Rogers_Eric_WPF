@@ -27,9 +27,7 @@ var pie = Math.PI; // set pie to Math.PI which is literally 3.141592653589793.
 
 var circumference = calcCircumference(pie, radius);  // call the function calcCircumference. Pass in pie and radius as the arguments, then save the returned results to circumference.
 
-var results = "The circumference of the circle is " + circumference;
+var results = "The circumference of the circle is " + circumference;  // setting the results with a brief message and including the circumference.
 
-
-
-console.log(results);
+console.log(results); // print the results to the console.
 
