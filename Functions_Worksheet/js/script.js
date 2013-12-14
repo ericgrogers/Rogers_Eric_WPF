@@ -16,3 +16,9 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 var calcCircumference = function(p, r){
     return 2 * p * r;
 };
+
+// declare the necessary variables.
+
+var radius = 10;
+var pie = Math.PI;
+var circumference = calcCircumference(pie, radius);
