@@ -55,4 +55,4 @@ function calcStings(stng, lbs){
     return stng * lbs;
 }
 
-console.log(results);
+console.log(results); // print the results to the console.
