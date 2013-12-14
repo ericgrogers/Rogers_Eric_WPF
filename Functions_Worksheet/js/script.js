@@ -36,3 +36,8 @@ console.log(results); // print the results to the console.
 // It takes 8.666666667 bee stings per pound to kill an animal.
 // Calculate how many bee stings are needed to kill an animal.
 
+// declare the necessary variables
+
+var stingsPerPound = 8.666666667;
+var victimWeight = 200;
+
