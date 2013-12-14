@@ -12,8 +12,10 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 
 // create an anonymous function
 
-
+// set calcCircumference to be an anonymous function that takes the parameters p and r.
 var calcCircumference = function(p, r){
+    
+    // multiply 2 times p times r and return the results to the function call.
     return 2 * p * r;
 };
 
