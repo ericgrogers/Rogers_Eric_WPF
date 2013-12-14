@@ -48,7 +48,10 @@ results = "It takes " + totalStings + " bee stings to kill this animal."; // set
 
 // declare and define the function
 
+// create the function calcStings and give it the parameters of stng and lbs.
 function calcStings(stng, lbs){
+
+	// multiply stng by lbs and return the results to the function call.
     return stng * lbs;
 }
 
