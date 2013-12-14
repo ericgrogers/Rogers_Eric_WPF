@@ -10,3 +10,9 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 // Circumference
 // calculate the circumference of a circle using the radius.  ( c=2πr)
 
+// create an anonymous function
+
+
+var calcCircumference = function(p, r){
+    return 2 * p * r;
+};
