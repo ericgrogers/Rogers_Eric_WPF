@@ -21,9 +21,9 @@ var calcCircumference = function(p, r){
 
 // declare the necessary variables.
 
-var radius = 10;
-var pie = Math.PI;
-var circumference = calcCircumference(pie, radius);
+var radius = 10; // set the radius to 10
+var pie = Math.PI; // set pie to Math.PI which is literally 3.141592653589793.
+var circumference = calcCircumference(pie, radius);  
 var results = "The circumference of the circle is " + circumference;
 
 
