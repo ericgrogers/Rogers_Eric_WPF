@@ -22,3 +22,9 @@ var calcCircumference = function(p, r){
 var radius = 10;
 var pie = Math.PI;
 var circumference = calcCircumference(pie, radius);
+var results = "The circumference of the circle is " + circumference;
+
+
+
+console.log(results);
+
