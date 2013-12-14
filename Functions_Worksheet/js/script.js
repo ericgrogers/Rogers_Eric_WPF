@@ -41,4 +41,5 @@ console.log(results); // print the results to the console.
 var stingsPerPound = 8.666666667;
 var victimWeight = 200;
 var totalStings = calcStings(stingsPerPound, victimWeight);
+results = "It takes " + totalStings + " bee stings to kill this animal.";
 
