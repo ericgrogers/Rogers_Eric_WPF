@@ -74,7 +74,7 @@ function photoCount(){
     var photosNeedsNumber = true; // set photosNeedsNumber to be true.
     while(photosNeedsNumber){  // while photosNeedsNumber is true,
     // if photos is not a number or photos is empty or the remainder of dividing photos by 2 is not equal to 0, prompt the user again for the photo count. Otherwise, set photosNeedsNumber to false.
-        (isNaN(photos) || photos === null ||photos % 2 != 0) ? photos = prompt("I'm sorry, you have to enter an even number. How many Photos do you want to add to the page?") : photosNeedsNumber = false;
+        (isNaN(photos) || photos === null || photos % 2 != 0) ? photos = prompt("I'm sorry, you have to enter an even number. How many Photos do you want to add to the page?") : photosNeedsNumber = false;
     }
     return photos; // return the value of photos.
 }
