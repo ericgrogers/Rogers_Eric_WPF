@@ -68,3 +68,13 @@ function treadmillHours(calories, caloriesBurned, speed){
     var timeToWalk = calories / (caloriesBurned * speed); // set timeToWalk to be calories divided by caloriesBurned times speed.
     return timeToWalk;  // return the value of timeToWalk.
 }
+
+
+// create a function treadmillTotal that takes the parameters hours, and hrsInDay.
+
+function treadmillTotal(hours, hrsInDay){
+    var totalDays = Math.floor(hours / hrsInDay); // set totalDays to be hours divided by hrsInDay rounded down.
+    var remainingHours = Math.floor(hours % hrsInDay); // set remainingHours to be the remainder of hours divided by hrsInDay rounded down.
+    var totalTime = [totalDays, remainingHours]; // set totalTime to be and array of totalDays, and remainingHours.
+    return totalTime; // return the value of totalTime.
+}
