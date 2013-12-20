@@ -85,8 +85,8 @@ function photosPerRow(photoCount){
     var photoRows = prompt("How many photos will be in a row?"); // prompt the user for the number of photos per row and store it in photoRows.
     var photoRowsNeedsNumber = true; // set photoRowsNeedsNumber to be true.
     while(photoRowsNeedsNumber){  // while photoRowsNeedsNumber is true,
-    //if photoRows is not a number or the remainder of dividing photoRows by to is not equal to 0, prompt the user again for a photo per row count. Otherwise if the remainder of photoCOunt divided by photoRows is not equal to 0, prompt the user again for a photos per row count. Otherwise, set photoRowsNeedsNumber to be false.
-        (isNaN(photoRows) || photoRows % 2 != 0) ? photoRows = prompt("I'm sorry, there must be equal amounts of photos in each row. How many photos will be in a row?") : (photoCount % photoRows != 0) ? photoRows = prompt("I'm sorry, there must be equal amounts of photos in each row. How many photos will be in a row?") : photoRowsNeedsNumber = false;
+    //if photoRows is not a number, prompt the user again for a photo per row count. Otherwise if the remainder of photoCOunt divided by photoRows is not equal to 0, prompt the user again for a photos per row count. Otherwise, set photoRowsNeedsNumber to be false.
+        (isNaN(photoRows)) ? photoRows = prompt("I'm sorry, you must enter a number. How many photos will be in a row?") : (photoCount % photoRows != 0) ? photoRows = prompt("I'm sorry, there must be an equal amount of photos in each row. How many photos will be in a row?") : photoRowsNeedsNumber = false;
     }
     return photoRows;  // return the value of photoRows.
 }
