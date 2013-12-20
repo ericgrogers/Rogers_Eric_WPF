@@ -52,3 +52,11 @@ function cookieAverage(){
     return cookies;  // return the value of cookies.
 
 }
+
+
+// create a function calcCalories to calculate the total calories Santa ate.
+
+function calcCalories(houses, cookies, calories){
+    var totalCalories = houses * cookies * calories; // set totalCalories to be houses times cookies times calories.
+    return totalCalories;  // return the value of totalCalories
+}
