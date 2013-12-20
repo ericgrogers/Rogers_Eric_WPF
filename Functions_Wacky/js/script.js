@@ -78,3 +78,6 @@ function treadmillTotal(hours, hrsInDay){
     var totalTime = [totalDays, remainingHours]; // set totalTime to be and array of totalDays, and remainingHours.
     return totalTime; // return the value of totalTime.
 }
+
+
+console.log(results); // print the results to the console.
