@@ -60,3 +60,11 @@ function calcCalories(houses, cookies, calories){
     var totalCalories = houses * cookies * calories; // set totalCalories to be houses times cookies times calories.
     return totalCalories;  // return the value of totalCalories
 }
+
+
+// create a function treadmillHours that takes the parameters calories, caloriesBurned, and speed.
+
+function treadmillHours(calories, caloriesBurned, speed){
+    var timeToWalk = calories / (caloriesBurned * speed); // set timeToWalk to be calories divided by caloriesBurned times speed.
+    return timeToWalk;  // return the value of timeToWalk.
+}
