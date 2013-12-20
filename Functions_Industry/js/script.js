@@ -13,3 +13,16 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 
 var marginSize = 30; // set the marginSize to 30.
 var gutterSize = 30; // set the gutterSize to 30.
+
+// create an anonymous function "main" to run the program.
+
+var main = function(){
+    var width = getPageWidth(); // call the getPageWidth function and save the results to width.
+    var headFoot = getHeaderFooter(); // call the getHeaderFooter function and save the results to headFoot.
+    var pCount = photoCount(); // call the photocount function and save the results to pCount.
+    var pRows = photosPerRow(pCount); // call the photosPerRow function passing in the argument pCount and save the results to pRows.
+    var pSize = calcPhotoSize(width, pRows, marginSize, gutterSize); // call the calcPhotoSize function passing in width, pRows, marginSize, and gutterSize arguments. Save the results to pSize.
+    var height = (calcPageHeight(headFoot, marginSize, pCount, pRows, pSize)); // call the calcPageHeight function passing in headFoot, marginSize, pCount,pRows, and pSize arguments. Save the results to height.
+    var results = "A " + width + " x " + height + "px photo gallery page with " + pCount + " photos can be arranged in a " + pRows + " x " + pCount / pRows + " grid    with a photo size of " + pSize + " x " + pSize + "px.\n"; // generate a complete list of the results and save it to results.
+    return results; // return the results
+};
