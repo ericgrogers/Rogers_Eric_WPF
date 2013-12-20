@@ -33,8 +33,8 @@ function getPageWidth(){
     var widthNeedsNumber = true; // set widthNeedsNumber to be true.
     var pageWidth = prompt("Please enter the Web Page Width.");  // prompt the user for the page width. save the results to pageWidth.
     while(widthNeedsNumber){ // while widthNeedsNumber is true,
-    //check to see if pageWidth is a number, if not, prompt the user again for a page width. Otherwise, set widthNeedsNumber to false and exit the loop.
-        (isNaN(pageWidth)) ? pageWidth = prompt("I'm sorry, you have to enter a number. Please enter the Web Page Width.") : widthNeedsNumber = false;
+    //check to see if pageWidth is a number or if pageWidth is empty, if not, prompt the user again for a page width. Otherwise, set widthNeedsNumber to false and exit the loop.
+        (isNaN(pageWidth) || pageWidth === null) ? pageWidth = prompt("I'm sorry, you have to enter a number. Please enter the Web Page Width.") : widthNeedsNumber = false;
     }
     return pageWidth; // return the pageWidth.
 
@@ -47,7 +47,7 @@ function getHeaderFooter(){
     var headerHeight = prompt("Please enter the Header Height."); // prompt the user for a header height and store it in headerHeight.
     var headNeedsNumber = true; // set headNeedsNumber to be true.
     while(headNeedsNumber){ // while headNeedsNumber is true,
-        if(isNaN(headerHeight)){ // if headerHeight is not a number,
+        if(isNaN(headerHeight) || headerHeight === null){ // if headerHeight is not a number or is empty,
             headerHeight = prompt("I'm sorry, you have to enter a number. Please enter the Header Height."); // prompt the again for a header height.
         }else{ // otherwise,
             headerFooter.push(headerHeight); // add the headerHeight to the first empty index of the headerFooter array.
@@ -57,7 +57,7 @@ function getHeaderFooter(){
     var footerHeight = prompt("Please enter the Footer Height."); // prompt the user for the footer height and store it to footerHeight.
     var footNeedsNumber = true; // set footNeedsNumber to be true.
     while(footNeedsNumber){ // while footNeedsNumber is true,
-        if(isNaN(footerHeight)){ // if footerHeight is not a number,
+        if(isNaN(footerHeight) || footerHeight === null){ // if footerHeight is not a number,
             footerHeight = prompt("I'm sorry, you have to enter a number. Please enter the Footer Height.");  // prompt the user again for a footer height.
         }else{  // otherwise,
             headerFooter.push(footerHeight);  // add footerHeight to the first empty index of the headerFooter array.
@@ -73,8 +73,8 @@ function photoCount(){
     var photos = prompt("Please enter the amount of Photos you want to add to the page.(Must be an even number.)");  // prompt the user to input the amount of photos to use in even numbers only.
     var photosNeedsNumber = true; // set photosNeedsNumber to be true.
     while(photosNeedsNumber){  // while photosNeedsNumber is true,
-    // if photos is not a number or the remainder of dividing photos by 2 is not equal to 0, prompt the user again for the photo count. Otherwise, set photosNeedsNumber to false.
-        (isNaN(photos) || photos % 2 != 0) ? photos = prompt("I'm sorry, you have to enter an even number. How many Photos do you want to add to the page?") : photosNeedsNumber = false;
+    // if photos is not a number or photos is empty or the remainder of dividing photos by 2 is not equal to 0, prompt the user again for the photo count. Otherwise, set photosNeedsNumber to false.
+        (isNaN(photos) || photos === null ||photos % 2 != 0) ? photos = prompt("I'm sorry, you have to enter an even number. How many Photos do you want to add to the page?") : photosNeedsNumber = false;
     }
     return photos; // return the value of photos.
 }
@@ -85,8 +85,8 @@ function photosPerRow(photoCount){
     var photoRows = prompt("How many photos will be in a row?"); // prompt the user for the number of photos per row and store it in photoRows.
     var photoRowsNeedsNumber = true; // set photoRowsNeedsNumber to be true.
     while(photoRowsNeedsNumber){  // while photoRowsNeedsNumber is true,
-    //if photoRows is not a number, prompt the user again for a photo per row count. Otherwise if the remainder of photoCOunt divided by photoRows is not equal to 0, prompt the user again for a photos per row count. Otherwise, set photoRowsNeedsNumber to be false.
-        (isNaN(photoRows)) ? photoRows = prompt("I'm sorry, you must enter a number. How many photos will be in a row?") : (photoCount % photoRows != 0) ? photoRows = prompt("I'm sorry, there must be an equal amount of photos in each row. How many photos will be in a row?") : photoRowsNeedsNumber = false;
+    //if photoRows is not a number or photoRows is empty, prompt the user again for a photo per row count. Otherwise if the remainder of photoCOunt divided by photoRows is not equal to 0, prompt the user again for a photos per row count. Otherwise, set photoRowsNeedsNumber to be false.
+        (isNaN(photoRows) || photoRows === null) ? photoRows = prompt("I'm sorry, you must enter a number. How many photos will be in a row?") : (photoCount % photoRows != 0) ? photoRows = prompt("I'm sorry, there must be an equal amount of photos in each row. How many photos will be in a row?") : photoRowsNeedsNumber = false;
     }
     return photoRows;  // return the value of photoRows.
 }
