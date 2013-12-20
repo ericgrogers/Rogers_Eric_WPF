@@ -16,3 +16,14 @@ var treadmillSpeed = 2; // set the treadmillSpeed to 2mph.
 var caloriesPerMile = 100; // set the caloriesPerMile to 100.
 var hoursInDay = 24; // set the hoursInDay to 24.
 var results = "Santa will have to run on the treadmill for " + main() + " to burn off all those calories from the children's cookies!";  // set the results to be a brief message and a function call to main.
+
+// create a main function to run the program.
+
+function main(){
+    var houses = housesVisited(); // call the housesVisited function and store the results to houses.
+    var cookies = cookieAverage(); // call the cookieAverage function and store the results to cookies.
+    var calories = calcCalories(houses, cookies, cookieCalories); // call the calcCalories function passing in houses, cookies, and cookieCalories as arguments and storying the results to calories.
+    var hoursOnTreadmill = treadmillHours(calories, caloriesPerMile, treadmillSpeed);  // call the treadmillHours function passing in calories, caloriesPerMile, and treadmillSpeed as arguments and store the results in hoursOnTreadmill.
+    var totalTime = treadmillTotal(hoursOnTreadmill, hoursInDay); // set totalTime to be the results of a call to the treadmillTotal function passing in hoursOnTreadmill and hoursInDay as arguments.
+    return totalTime[0] + " days and " + totalTime[1] + " hours"; // return the first index position of totalTime as days, and the second index position as hours (rounded down).
+}
