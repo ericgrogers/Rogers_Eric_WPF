@@ -90,3 +90,12 @@ function photosPerRow(photoCount){
     }
     return photoRows;  // return the value of photoRows.
 }
+
+// create a function calcPhotoSize that takes the parameters pageWidth, photoRows, marginSize, and gutterSize to calculate the size of the photos for the gallery.
+function calcPhotoSize(pageWidth, photoRows, marginSize, gutterSize){
+    var availablePageWidth = pageWidth  - marginSize * 2; // set the availablePageWidth to be the pageWidth minuse the marginSize times 2.
+    var horizontalGutters = photoRows - 1; // set the horizontalGUtters to be the photoRows minus 1.
+    var photoSize = (availablePageWidth - horizontalGutters * gutterSize) / photoRows; // set the photoSize to be availablePageWidth minus horizontalGutters times guttersize divided by photoRows.
+    return photoSize;  // return the value of photoSize.
+}
+
