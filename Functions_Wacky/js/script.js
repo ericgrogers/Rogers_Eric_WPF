@@ -39,3 +39,16 @@ function housesVisited(){
     }
     return totalHouses; // return the value of totalHouses.
 }
+
+// create a function cookieAverage to get the average number of cookies at each house.
+
+function cookieAverage(){
+    var cookiesNeedsNumber = true; // set cookiesNeedsNumber to be true.
+    var cookies = prompt("What is the average amount of cookies that the children left for Santa at each house?");  // ask the user for the average amount of cookies at each house.
+    while(cookiesNeedsNumber){  // while cookiesNeedsNumber is true,
+    // if cookies is not a number, ask the user again for the average cookie amount. Otherwise, set cookiesNeedsNumber to be false.
+        (isNaN(cookies)) ? cookies = prompt("What is the average amount of cookies that the children left for Santa at each house?") : cookiesNeedsNumber = false;
+    }
+    return cookies;  // return the value of cookies.
+
+}
