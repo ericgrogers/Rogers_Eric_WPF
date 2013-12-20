@@ -66,3 +66,15 @@ function getHeaderFooter(){
     }
     return headerFooter; // return the values of headerFooter.
 }
+
+// create a function to get the amount of photos to be added to the gallery.
+
+function photoCount(){
+    var photos = prompt("Please enter the amount of Photos you want to add to the page.(Must be an even number.)");  // prompt the user to input the amount of photos to use in even numbers only.
+    var photosNeedsNumber = true; // set photosNeedsNumber to be true.
+    while(photosNeedsNumber){  // while photosNeedsNumber is true,
+    // if photos is not a number or the remainder of dividing photos by 2 is not equal to 0, prompt the user again for the photo count. Otherwise, set photosNeedsNumber to false.
+        (isNaN(photos) || photos % 2 != 0) ? photos = prompt("I'm sorry, you have to enter an even number. How many Photos do you want to add to the page?") : photosNeedsNumber = false;
+    }
+    return photos; // return the value of photos.
+}
