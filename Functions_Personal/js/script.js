@@ -91,3 +91,9 @@ function generateList(playlist, music){ // generateList has the parameters playl
     }
     results = description + list; // set results to be description plus list.
 }
+
+// call the main function to start the program.
+main();
+
+// print the results to the console.
+console.log(results);
