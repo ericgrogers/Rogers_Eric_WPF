@@ -17,3 +17,10 @@ document.querySelector("body").style.backgroundColor= "#00FF00";
 var mp3s = []; // set an array to store the list of mp3's
 var results; // set a variable to hold the final results.
 var playlistName; // set a variable to hold the playlist name.
+
+// create the main function to run the program.
+
+function main(){
+    playlistName = getName(); // call the getName function and save the results to playlistName.
+    addMp3(); // call the addMp3 function.
+}
