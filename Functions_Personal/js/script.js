@@ -48,3 +48,14 @@ function addMp3(){
     checkForEmpty(); // call the checkForEmpty function.
     }
 }
+
+// create a function to check to see if there is an mp3 on the list.
+
+function checkForEmpty(){
+    if(mp3s.length <= 0){ // if the length of mp3s is less than or equal to 0,
+        addMp3(); // call the addMp3 function.
+    }else{ // otherwise,
+        generateList(playlistName, mp3s); // call the generateList function, passing in playlistName and mp3s as arguments.
+    }
+}
+
