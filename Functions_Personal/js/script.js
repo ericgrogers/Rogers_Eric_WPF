@@ -78,3 +78,16 @@ function getMp3Name(){
         addMp3(); // call the addMp3 function.
     }
 }
+
+// create a function to generate the playlist
+
+function generateList(playlist, music){ // generateList has the parameters playlist music.
+    var count = 1; // set a counter to 1.
+    var list = ""; // create an empty string variable named list
+    var description = "You have " + music.length + " mp3's in your " + playlist +" playlist.\n\n"; // set the description variable to include the number of mp3's and playlist name.
+    for(i=0; i < music.length; i++){ // set i to 0, while i is less than the length of the music variable(mp3s), add 1 to i.
+        list += count + ". " +music[i] +"\n"; // list equals list plus list plus the value of count pluse the value of music at the current index position. add a new line after.
+        count ++; // increment count by 1.
+    }
+    results = description + list; // set results to be description plus list.
+}
