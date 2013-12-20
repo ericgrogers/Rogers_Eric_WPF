@@ -40,3 +40,29 @@ function getPageWidth(){
 
 }
 
+// create a function getHeaderFooter to get the header and footer heights.
+
+function getHeaderFooter(){
+    var headerFooter = []; // set headerFooter to be an empty array.
+    var headerHeight = prompt("Please enter the Header Height."); // prompt the user for a header height and store it in headerHeight.
+    var headNeedsNumber = true; // set headNeedsNumber to be true.
+    while(headNeedsNumber){ // while headNeedsNumber is true,
+        if(isNaN(headerHeight)){ // if headerHeight is not a number,
+            headerHeight = prompt("I'm sorry, you have to enter a number. Please enter the Header Height."); // prompt the again for a header height.
+        }else{ // otherwise,
+            headerFooter.push(headerHeight); // add the headerHeight to the first empty index of the headerFooter array.
+            headNeedsNumber = false; // set headNeedsNUmber to false.
+        }
+    }
+    var footerHeight = prompt("Please enter the Footer Height."); // prompt the user for the footer height and store it to footerHeight.
+    var footNeedsNumber = true; // set footNeedsNumber to be true.
+    while(footNeedsNumber){ // while footNeedsNumber is true,
+        if(isNaN(footerHeight)){ // if footerHeight is not a number,
+            footerHeight = prompt("I'm sorry, you have to enter a number. Please enter the Footer Height.");  // prompt the user again for a footer height.
+        }else{  // otherwise,
+            headerFooter.push(footerHeight);  // add footerHeight to the first empty index of the headerFooter array.
+            footNeedsNumber = false; // set footNeedsNumber to false.
+        }
+    }
+    return headerFooter; // return the values of headerFooter.
+}
