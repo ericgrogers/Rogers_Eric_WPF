@@ -26,3 +26,17 @@ var main = function(){
     var results = "A " + width + " x " + height + "px photo gallery page with " + pCount + " photos can be arranged in a " + pRows + " x " + pCount / pRows + " grid    with a photo size of " + pSize + " x " + pSize + "px.\n"; // generate a complete list of the results and save it to results.
     return results; // return the results
 };
+
+// create a function to get the page width.
+
+function getPageWidth(){
+    var widthNeedsNumber = true; // set widthNeedsNumber to be true.
+    var pageWidth = prompt("Please enter the Web Page Width.");  // prompt the user for the page width. save the results to pageWidth.
+    while(widthNeedsNumber){ // while widthNeedsNumber is true,
+    //check to see if pageWidth is a number, if not, prompt the user again for a page width. Otherwise, set widthNeedsNumber to false and exit the loop.
+        (isNaN(pageWidth)) ? pageWidth = prompt("I'm sorry, you have to enter a number. Please enter the Web Page Width.") : widthNeedsNumber = false;
+    }
+    return pageWidth; // return the pageWidth.
+
+}
+
