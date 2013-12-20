@@ -59,3 +59,22 @@ function checkForEmpty(){
     }
 }
 
+// create a function to get the name of the mp3 to be added.
+
+function getMp3Name(){
+    var name = prompt("Please enter the name of the MP3."); // prompt the user to enter an mp3 name and store it in name.
+    while(name === ""){ // while the name variable is empty,
+        name = prompt("You have to give it a name. Please enter the name of the MP3.");  // prompt the user again for an mp3 name.
+    }
+    var isSure = prompt("Is this the correct name: " + name + "?"); // ask the user if they entered the correct name. Store their answer in isSure.
+    while(isSure != "yes" && isSure != "no"){ // while isSure is not yes and not no,
+        isSure = prompt("You have to answer Yes or No. Is this the correct name: " + name + "?"); // prompt the user again and ask if they entered the correct name.
+    }
+    if(isSure.toLowerCase() === "no"){  // if the user entered no to isSure,
+        getMp3Name(); // call the getMp3Name function again.
+    }else{ // otherwise,
+        mp3s.push(name.toLowerCase()); // add the value of name in lowercase letters to the mp3s array at the next empty index position.
+        mp3s.sort(); // sort the mp3s alphabetically.
+        addMp3(); // call the addMp3 function.
+    }
+}
