@@ -34,3 +34,17 @@ function getName(){
     }
     return plName;  // return the playlist name
 }
+
+// create a function to find out if the user wants to add a new mp3.
+
+function addMp3(){
+    var add = prompt("Would you like to enter a new MP3 into your playlist?").toLowerCase(); // ask the user with a prompt if they want to add a new mp3. Store their response in the variable add in all lowercase letters.
+    while(add != "yes" && add != "no"){ // while add is not yes and it's not no, 
+        add = prompt("You must answer Yes or No. Would you like to enter a new MP3 into your playlist?").toLowerCase(); // prompt the user again for an answer of yes or no.
+    }
+    if(add === "yes"){ // if add is exactly equal to "yes",
+        getMp3Name(); // call the getMp3Name function.
+    }else{ // otherwise,
+    checkForEmpty(); // call the checkForEmpty function.
+    }
+}
