@@ -108,3 +108,5 @@ function calcPageHeight(headerFooter, marginSize, photoCount, photoRows, photoSi
     return totalPageHeight;  // return the value of totalPageHeight.
 }
 
+console.log(main()); // print to the console the results by calling the main function to run the program.
+
