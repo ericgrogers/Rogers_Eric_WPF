@@ -99,3 +99,12 @@ function calcPhotoSize(pageWidth, photoRows, marginSize, gutterSize){
     return photoSize;  // return the value of photoSize.
 }
 
+
+// create a function calcPageHeight with the parameters headerFooter, marginSize, photoCount, photoRows, and photoSize to calculate the total page height.
+function calcPageHeight(headerFooter, marginSize, photoCount, photoRows, photoSize){
+    var columns = photoCount / photoRows; // set the columns to be photoCount / photoRows.
+    var verticalGutters = columns -1; // set the verticalGutters to be columns minus 1.
+    var totalPageHeight = marginSize * 4 + Number(headerFooter[0]) + Number(headerFooter[1]) + columns * photoSize + verticalGutters * marginSize; // set totalPageHeight to be marginSize * 4 plus the first index position of headerFooter plus the second index position of headerFooter plus columns times photoSize plus verticalGutters * marginSize.
+    return totalPageHeight;  // return the value of totalPageHeight.
+}
+
