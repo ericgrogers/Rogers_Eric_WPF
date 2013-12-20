@@ -27,3 +27,15 @@ function main(){
     var totalTime = treadmillTotal(hoursOnTreadmill, hoursInDay); // set totalTime to be the results of a call to the treadmillTotal function passing in hoursOnTreadmill and hoursInDay as arguments.
     return totalTime[0] + " days and " + totalTime[1] + " hours"; // return the first index position of totalTime as days, and the second index position as hours (rounded down).
 }
+
+// create a function housesVisited to get the total houses Santa visited.
+
+function housesVisited(){
+    var totalHousesNeedsNumber = true; // set totalHousesNeedsNumber to be true.
+    var totalHouses = prompt("How many houses did Santa Clause visit on Christmas Eve?"); // ask the user how many houses Santa visited. Store the answer to totalHouses.
+    while(totalHousesNeedsNumber){ // while totalHousesNeedsNumber is true,
+    // if totalHouses is not a number, prompt the user again for the total houses. Otherwise, set totalHousesNeedsNumber to false.
+        (isNaN(totalHouses)) ? totalHouses = prompt("How many houses did Santa Clause visit on Christmas Eve?") : totalHousesNeedsNumber = false;
+    }
+    return totalHouses; // return the value of totalHouses.
+}
